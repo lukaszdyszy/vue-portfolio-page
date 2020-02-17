@@ -6,18 +6,25 @@
         <Menu />
       </nav>
     </header>
-    <router-view/>
+    <main>
+      <router-view/>
+    </main>
+    <footer>
+      <Footer />
+    </footer>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header';
 import Menu from '@/components/Menu';
+import Footer from '@/components/Footer';
 
 export default {
   components: {
     Header,
-    Menu
+    Menu,
+    Footer
   }
 }
 </script>
@@ -45,6 +52,16 @@ h1{
   letter-spacing: 1px;
   margin: 0;
   padding: 15px 0 10px 0;
+}
+h2{
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 10px 0;
+}
+
+
+main{
+  margin: 25px 0;
 }
 
 </style>
