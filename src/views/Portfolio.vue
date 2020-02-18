@@ -1,5 +1,5 @@
 <template>
-    <div class="portfolio-container">
+    <div class="portfolio-container container">
         <ProjectCard v-for="project in projects" 
         :title="project.title" 
         :thumbnail="project.thumbnail" 
@@ -46,9 +46,6 @@ export default {
 
 <style lang="scss" scoped>
 
-.portfolio-container{
-    max-width: 900px;
-    margin: 0 auto;
-}
+
 
 </style>

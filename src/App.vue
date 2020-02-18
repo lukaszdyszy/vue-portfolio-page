@@ -64,4 +64,9 @@ main{
   margin: 25px 0;
 }
 
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 </style>
