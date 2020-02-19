@@ -37,6 +37,30 @@ export default {
                     technologies: ['vue', 'scss'],
                     demoLink: 'http://www.google.com',
                     githubLink: 'http://www.github.com'
+                },
+                {
+                    title: 'Project #3',
+                    thumbnail: 'webdev.jpg',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium ratione eius voluptate.',
+                    technologies: ['vue', 'scss'],
+                    demoLink: 'http://www.google.com',
+                    githubLink: 'http://www.github.com'
+                },
+                {
+                    title: 'Project #4',
+                    thumbnail: 'webdev.jpg',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium ratione eius voluptate.',
+                    technologies: ['vue', 'scss'],
+                    demoLink: 'http://www.google.com',
+                    githubLink: 'http://www.github.com'
+                },
+                {
+                    title: 'Project #5',
+                    thumbnail: 'webdev.jpg',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laudantium ratione eius voluptate.',
+                    technologies: ['vue', 'scss'],
+                    demoLink: 'http://www.google.com',
+                    githubLink: 'http://www.github.com'
                 }
             ]
         }

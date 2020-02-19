@@ -3,8 +3,8 @@
         <div class="header-content">
             <h1>John Doe</h1>
             <div class="socials">
-                <i class="fab fa-github fa-1.5"></i>
-                <i class="fab fa-linkedin-in"></i>
+                <a href="http://www.github.com" target="blank"><i class="fab fa-github fa-1.5"></i></a>
+                <a href="http://www.linkedin.com" target="blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>

@@ -25,7 +25,6 @@ export default {
         this.startOffset = this.$el.offsetTop;
         window.addEventListener('scroll', function(){
             if(window.scrollY > self.startOffset){
-                console.log('sticky');
                 self.sticky = true;
             } else {
                 self.sticky = false;
@@ -36,6 +35,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.menu-container{
+    background-color: whitesmoke;
+    box-shadow: 0px 3px 8px 2px whitesmoke;
+}
 
 ul.main-menu{
     font-weight: 300;
@@ -57,11 +61,11 @@ a.router-link-exact-active{
 
 .sticky{
     position: fixed;
+    z-index: 100;
     width: 100%;
     top: 0;
     left: 0;
     border-top: 2px solid black;
-    background-color: whitesmoke;
 }
 
 </style>

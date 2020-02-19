@@ -7,7 +7,9 @@
       </nav>
     </header>
     <main>
-      <router-view/>
+      <transition name="page" mode="out-in">
+        <router-view/>
+      </transition>
     </main>
     <footer>
       <Footer />
@@ -67,6 +69,22 @@ main{
 .container{
   max-width: 900px;
   margin: 0 auto;
+}
+
+
+// page transition
+.page-leave, .page-enter-to{
+  opacity: 1;
+  transform: scaleY(1);
+  transform-origin: top;
+}
+.page-enter, .page-leave-to{
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.page-enter-active, .page-leave-active{
+  transition: opacity 1s, transform 0.85s;
 }
 
 </style>

@@ -19,14 +19,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 .skill-card-container{
     margin: 20px;
     padding: 15px;
     text-align: center;
     font-weight: 300;
-    // box-shadow: 0px 5px 5px -4px rgba(0,0,0,0.75);
     border-bottom: 1px solid rgb(212, 212, 212);
     position: relative;
     &::after{
@@ -36,7 +35,7 @@ export default {
         height: 100%;
         top: 0;
         left: 0;
-        box-shadow: inset 0px -5px 10px -5px rgba(138,50,138,1);
+        box-shadow: inset 0px -7px 10px -10px rgba(138,50,138,1);
         opacity: 0;
         transition: opacity 0.3s;
     }
@@ -49,6 +48,20 @@ export default {
 
 header.skill-header{
     text-align: center;
+}
+
+.skill-card-content{
+    display: inline-block;
+}
+.skill{
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+img.skill-icon{
+    width: 32px;
+    height: 32px;
+    margin: 0 10px 0 0;
 }
 
 </style>

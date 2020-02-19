@@ -1,12 +1,12 @@
 <template>
     <div class="footer-container">
         <div class="contacts">
-            <i class="far fa-envelope"></i> johndoe@gmail.com
+            <a href="mailto:johndoe@gmail.com" target="blank"><i class="far fa-envelope"></i> johndoe@gmail.com</a>
             <br>
             <i class="fas fa-phone-alt"></i> 111 222 333
         </div>
         <div class="copywright">
-            &copy; John Doe 2019
+            &copy; John Doe 2020
         </div>
     </div>
 </template>
