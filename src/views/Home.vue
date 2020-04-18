@@ -1,7 +1,7 @@
 <template>
   <div class="home-container container">
     <div class="welcome-box">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minus provident fugit velit cupiditate sint! Sed quisquam eaque eum molestias odit eligendi quae dolorum sequi quos ab quia aperiam minus, cupiditate cumque rem modi alias ad. Sit dolores consequuntur numquam, veritatis expedita aspernatur, soluta, ipsa quos iure sequi atque blanditiis alias voluptas laboriosam tempore voluptate.
+      {{ $t('welcome') }}
     </div>
     <SkillCard v-for="skill in skills" 
     :skillTitle="skill.skillTitle" 
@@ -9,6 +9,17 @@
     />
   </div>
 </template>
+
+<i18n>
+{
+  "en": {
+    "welcome": "Hello! My name is John Doe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minus provident fugit velit cupiditate sint! Sed quisquam eaque eum molestias odit eligendi quae dolorum sequi quos ab quia aperiam minu."
+  },
+  "pl": {
+    "welcome": "Witam! Nazywam się John Doe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minus provident fugit velit cupiditate sint! Sed quisquam eaque eum molestias odit eligendi quae dolorum sequi quos ab quia aperiam minu."
+  }
+}
+</i18n>
 
 <script>
 import SkillCard from '@/components/SkillCard';

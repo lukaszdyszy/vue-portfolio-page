@@ -2,14 +2,27 @@
     <div class="menu-container" :class="{'sticky': sticky}">
         <ul class="main-menu">
             <li>
-                <router-link to="/">About</router-link>
+                <router-link to="/">{{ $t('about') }}</router-link>
             </li>
             <li>
-                <router-link to="/portfolio">Portfolio</router-link>
+                <router-link to="/portfolio">{{ $t('portfolio') }}</router-link>
             </li>
         </ul>
     </div>
 </template>
+
+<i18n>
+{
+    "en": {
+        "about": "About",
+        "portfolio": "Portfolio"
+    },
+    "pl": {
+        "about": "O mnie",
+        "portfolio": "Portfolio"
+    }
+}
+</i18n>
 
 <script>
 export default {
@@ -38,17 +51,17 @@ export default {
 
 .menu-container{
     background-color: whitesmoke;
-    box-shadow: 0px 3px 8px 2px whitesmoke;
+    box-shadow: 0px 3px 10px 2px whitesmoke;
 }
 
 ul.main-menu{
     font-weight: 300;
     margin: 0;
-    padding: 0;
+    padding: 5px 0;
     list-style-type: none;
     display: flex;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     li{
         line-height: 200%;
         padding: 0 10px;

@@ -3,7 +3,7 @@
         <div class="contacts">
             <a href="mailto:johndoe@gmail.com" target="blank"><i class="far fa-envelope"></i> johndoe@gmail.com</a>
             <br>
-            <i class="fas fa-phone-alt"></i> 111 222 333
+            <a href="tel:517989464"><i class="fas fa-phone-alt"></i> 111 222 333</a>
         </div>
         <div class="copywright">
             &copy; John Doe 2020
