@@ -4,7 +4,7 @@
       {{ $t('welcome') }}
     </div>
     <SkillCard v-for="skill in skills" 
-    :skillTitle="skill.skillTitle" 
+    :skillTitle="$t(skill.skillTitle)" 
     :skillList="skill.skillList" 
     />
   </div>
@@ -13,10 +13,22 @@
 <i18n>
 {
   "en": {
-    "welcome": "Hello! My name is John Doe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minus provident fugit velit cupiditate sint! Sed quisquam eaque eum molestias odit eligendi quae dolorum sequi quos ab quia aperiam minu."
+    "welcome": "I am first year student of Computer Science at Silesian University of Technology. I have been inetersted in programming and web development for a couple of years.",
+    "frontend": "Front end",
+    "backend": "Back end",
+    "frameworks": "Frmeworks",
+    "languages": "Languages",
+    "polish": "polish - native",
+    "english": "english - B2"
   },
   "pl": {
-    "welcome": "Witam! Nazywam się John Doe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minus provident fugit velit cupiditate sint! Sed quisquam eaque eum molestias odit eligendi quae dolorum sequi quos ab quia aperiam minu."
+    "welcome": "Jestem studenetem pierwszego roku Informatyki na Politechnice Śląskiej. Od kilku lat interesuję się programowaniem oraz web developmentem.",
+    "frontend": "Front end",
+    "backend": "Back end",
+    "frameworks": "Frameworki",
+    "languages": "Języki",
+    "polish": "polski - natywnie",
+    "english": "angielski - B2"
   }
 }
 </i18n>
@@ -29,11 +41,11 @@ export default {
   components: {
     SkillCard
   },
-  data(){
-    return {
-      skills: [
+  computed: {
+    skills: function(){
+      return [
         {
-          skillTitle: 'Frontend',
+          skillTitle: 'frontend',
           skillList: [
             '<img src="'+require("../assets/skills/html5-64.png")+'" class="skill-icon">html', 
             '<img src="'+require("../assets/skills/css-64.png")+'" class="skill-icon">css', 
@@ -41,24 +53,22 @@ export default {
           ]
         },
         {
-          skillTitle: 'Backend',
+          skillTitle: 'backend',
           skillList: [
-            '<img src="'+require("../assets/skills/php-64.png")+'" class="skill-icon">php'
+            '<img src="'+require("../assets/skills/php-64.png")+'" class="skill-icon">php',
+            '<img src="'+require("../assets/skills/mysql-256.png")+'" class="skill-icon">MySql'
           ]
         },
         {
-          skillTitle: 'Frameworks',
+          skillTitle: 'frameworks',
           skillList: [
-            '<img src="'+require("../assets/skills/vue.png")+'" class="skill-icon">vue'
+            '<img src="'+require("../assets/skills/vue.png")+'" class="skill-icon">vue',
+            '<img src="'+require("../assets/skills/react.png")+'" class="skill-icon">react'
           ]
         },
         {
-          skillTitle: 'Lnaguages',
-          skillList: [
-            'polish - native',
-            'english - B2',
-            'spanish - basic'
-          ]
+          skillTitle: 'languages',
+          skillList: [this.$t('polish'), this.$t('english')]
         }
       ]
     }

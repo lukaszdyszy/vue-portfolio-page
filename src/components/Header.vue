@@ -1,10 +1,10 @@
 <template>
     <div class="header-container">
         <div class="header-content">
-            <h1>John Doe</h1>
+            <h1>Łukasz Dyszy</h1>
             <div class="socials">
-                <a href="http://www.github.com" target="blank"><i class="fab fa-github fa-1.5"></i></a>
-                <a href="http://www.linkedin.com" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/lukaszdyszy" target="blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/%C5%82ukasz-dyszy-571763190/" target="blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="locales">
                 <img src="../assets/locales/en-rect.png" :class="{'locale-active': $i18n.locale=='en'}" alt="english" title="english" @click="$i18n.locale='en'">

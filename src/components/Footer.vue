@@ -1,12 +1,12 @@
 <template>
     <div class="footer-container">
         <div class="contacts">
-            <a href="mailto:johndoe@gmail.com" target="blank"><i class="far fa-envelope"></i> johndoe@gmail.com</a>
+            <a href="mailto:lukaszdyszy0192@gmail.com" target="blank"><i class="far fa-envelope"></i> lukaszdyszy0192@gmail.com</a>
             <br>
-            <a href="tel:517989464"><i class="fas fa-phone-alt"></i> 111 222 333</a>
+            <a href="tel:517989464"><i class="fas fa-phone-alt"></i> 517 989 464 </a>
         </div>
         <div class="copywright">
-            &copy; John Doe 2020
+            &copy; Łukasz Dyszy 2020.
         </div>
     </div>
 </template>
@@ -28,7 +28,7 @@ export default {
 
 .contacts{
     padding: 15px 0;
-    line-height: 150%;
+    line-height: 200%;
 }
 .copywright{
     padding: 10px 0 35px 0;

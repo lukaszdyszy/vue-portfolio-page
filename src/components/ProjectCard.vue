@@ -9,7 +9,7 @@
             </div>
             <div class="description">
                 <p class="dscr">{{ description }}</p>
-                <p class="techs"><span class="subheader">Technologies: </span><span v-for="tech in technologies">{{ tech }}, </span></p>
+                <p class="techs"><span class="subheader">{{ $t('technologies') }}: </span><span v-for="tech in technologies">{{ tech }}, </span></p>
             </div>
             <div class="links">
                 <a :href="demoLink" target="blank"><i class="fas fa-desktop fa-2x"></i></a>
@@ -18,6 +18,17 @@
         </div>
     </div>
 </template>
+
+<i18n>
+{
+    "en": {
+        "technologies": "Technologies"
+    },
+    "pl": {
+        "technologies": "Technologie"
+    }
+}
+</i18n>
 
 <script>
 export default {
