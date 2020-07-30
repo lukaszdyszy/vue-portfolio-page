@@ -68,13 +68,6 @@ export default {
         return {
             projects: [
                 {
-                    title: "rc-timer",
-                    thumbnail: "rctimer.png",
-                    technologies: ["react"],
-                    demoLink: "https://lukaszdyszy.github.io/rc-timer/",
-                    githubLink: "https://github.com/lukaszdyszy/rc-timer"
-                },
-                {
                     title: "task-calendar",
                     thumbnail: "taskcalendar.png",
                     technologies: ["MySql", "REST Api", "php", "vue"],
@@ -83,10 +76,17 @@ export default {
                 },
                 {
                     title: "currency-calculator",
-                    thumbnail: "currencycalculator.png",
-                    technologies: ["vue", "Api"],
-                    demoLink: "https://lukaszdyszy.github.io/currency-calculator/#/",
-                    githubLink: "https://github.com/lukaszdyszy/currency-calculator"
+                    thumbnail: "ccreact.png",
+                    technologies: ["react", "axios", "Api", "scss"],
+                    demoLink: "https://lukaszdyszy.github.io/currency-calculator-react",
+                    githubLink: "https://github.com/lukaszdyszy/currency-calculator-react"
+                },
+                {
+                    title: "rc-timer",
+                    thumbnail: "rctimer.png",
+                    technologies: ["react"],
+                    demoLink: "https://lukaszdyszy.github.io/rc-timer/",
+                    githubLink: "https://github.com/lukaszdyszy/rc-timer"
                 },
                 {
                     title: "piffko-kunst",

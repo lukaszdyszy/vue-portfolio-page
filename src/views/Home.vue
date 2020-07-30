@@ -49,14 +49,8 @@ export default {
           skillList: [
             '<img src="'+require("../assets/skills/html5-64.png")+'" class="skill-icon">html', 
             '<img src="'+require("../assets/skills/css-64.png")+'" class="skill-icon">css', 
-            '<img src="'+require("../assets/skills/js-64.png")+'" class="skill-icon">javascript'
-          ]
-        },
-        {
-          skillTitle: 'backend',
-          skillList: [
-            '<img src="'+require("../assets/skills/php-64.png")+'" class="skill-icon">php',
-            '<img src="'+require("../assets/skills/mysql-256.png")+'" class="skill-icon">MySql'
+            '<img src="'+require("../assets/skills/js-64.png")+'" class="skill-icon">javascript',
+            '<img src="'+require("../assets/skills/sass-64.png")+'" class="skill-icon">sass'
           ]
         },
         {
@@ -64,6 +58,13 @@ export default {
           skillList: [
             '<img src="'+require("../assets/skills/vue.png")+'" class="skill-icon">vue',
             '<img src="'+require("../assets/skills/react.png")+'" class="skill-icon">react'
+          ]
+        },
+        {
+          skillTitle: 'backend',
+          skillList: [
+            '<img src="'+require("../assets/skills/php-64.png")+'" class="skill-icon">php - basic',
+            '<img src="'+require("../assets/skills/mysql-256.png")+'" class="skill-icon">MySql - basic'
           ]
         },
         {
